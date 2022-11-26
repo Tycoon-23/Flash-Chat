@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		488C69D2292F35F90075A6FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488C69D1292F35F90075A6FC /* AppDelegate.swift */; };
 		488C69D4292F35F90075A6FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488C69D3292F35F90075A6FC /* SceneDelegate.swift */; };
-		488C69D6292F35F90075A6FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488C69D5292F35F90075A6FC /* ViewController.swift */; };
 		488C69D9292F35F90075A6FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488C69D7292F35F90075A6FC /* Main.storyboard */; };
 		488C69DB292F35FA0075A6FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 488C69DA292F35FA0075A6FC /* Assets.xcassets */; };
 		488C69DE292F35FA0075A6FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 488C69DC292F35FA0075A6FC /* LaunchScreen.storyboard */; };
+		488C69F4292F39E70075A6FC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488C69F3292F39E70075A6FC /* WelcomeViewController.swift */; };
+		488C69F6292F3A710075A6FC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488C69F5292F3A710075A6FC /* RegisterViewController.swift */; };
+		488C69F8292F3AB40075A6FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488C69F7292F3AB40075A6FC /* LoginViewController.swift */; };
+		488C69FA292F3AEC0075A6FC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488C69F9292F3AEC0075A6FC /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		488C69CE292F35F90075A6FC /* Flash-Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash-Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		488C69D1292F35F90075A6FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		488C69D3292F35F90075A6FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		488C69D5292F35F90075A6FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		488C69D8292F35F90075A6FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		488C69DA292F35FA0075A6FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		488C69DD292F35FA0075A6FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		488C69DF292F35FA0075A6FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		488C69F3292F39E70075A6FC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		488C69F5292F3A710075A6FC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		488C69F7292F3AB40075A6FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		488C69F9292F3AEC0075A6FC /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,32 @@
 			children = (
 				488C69D1292F35F90075A6FC /* AppDelegate.swift */,
 				488C69D3292F35F90075A6FC /* SceneDelegate.swift */,
-				488C69D5292F35F90075A6FC /* ViewController.swift */,
-				488C69D7292F35F90075A6FC /* Main.storyboard */,
+				488C69EC292F38BA0075A6FC /* Controllers */,
+				488C69FB292F3B250075A6FC /* View */,
 				488C69DA292F35FA0075A6FC /* Assets.xcassets */,
 				488C69DC292F35FA0075A6FC /* LaunchScreen.storyboard */,
 				488C69DF292F35FA0075A6FC /* Info.plist */,
 			);
 			path = "Flash-Chat";
+			sourceTree = "<group>";
+		};
+		488C69EC292F38BA0075A6FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				488C69F3292F39E70075A6FC /* WelcomeViewController.swift */,
+				488C69F5292F3A710075A6FC /* RegisterViewController.swift */,
+				488C69F7292F3AB40075A6FC /* LoginViewController.swift */,
+				488C69F9292F3AEC0075A6FC /* ChatViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		488C69FB292F3B250075A6FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				488C69D7292F35F90075A6FC /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				488C69D6292F35F90075A6FC /* ViewController.swift in Sources */,
+				488C69F4292F39E70075A6FC /* WelcomeViewController.swift in Sources */,
 				488C69D2292F35F90075A6FC /* AppDelegate.swift in Sources */,
 				488C69D4292F35F90075A6FC /* SceneDelegate.swift in Sources */,
+				488C69F8292F3AB40075A6FC /* LoginViewController.swift in Sources */,
+				488C69FA292F3AEC0075A6FC /* ChatViewController.swift in Sources */,
+				488C69F6292F3A710075A6FC /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
