@@ -15,8 +15,8 @@ class WelcomeViewController: UIViewController {
         
         titleLabel.text = ""
         
-        let titleText = "⚡️FlashChat"
-        var charIndex = 0.0
+        let titleText = "⚡️FlashChat"   //same as the UI
+        var charIndex = 0.0     //used in timer function to create different timers for each alphabet
         
         for letter in titleText {   ///break-down the title string to individual letters
             
